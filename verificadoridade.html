@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,34 +8,43 @@
     <title>Verificador de Idade</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
+
 <body onload="carregar()">
     <header>
         <h1> Verificador de idade</h1>
     </header>
     <section>
         <div id="msg">
-        <p>Ano de nascimento: 
-                <input type="number" name="txtano" id="txtano" min="0" >
+            <p>dia de nascimento: 
+                <input type="number" name="txtdia" id="txtdia" min=0>
             </p>
-            <p> Sexo: 
+            <p>mês de nascimento:
+                <input type="number" name="txtmes" id="txtmes" min=0>
+            </p>
+            <p>Ano de nascimento:
+                <input type="number" name="txtano" id="txtano" min=0>
+            </p>
+
+
+            <p> Sexo:
                 <input type="radio" name="radsex" id="mas" checked>
                 <label for="mas">Masculino</label>
                 <input type="radio" name="radsex" id="fem">
                 <label for="fem">Feminino</label>
             </p>
-            <p> 
+            <p>
                 <input type="button" value="Verificar" onclick="Verificar()">
             </p>
         </div>
-        <div 
-        id="res">
+        <div id="res">
         </div>
-    
+
     </section>
     <footer>
-        <p>&copy; FelixProgramador</p>
+        <p>&copy; Artur Leone</p>
     </footer>
-    
+
 </body>
 <script src="interaçao.js"></script>
+
 </html>
